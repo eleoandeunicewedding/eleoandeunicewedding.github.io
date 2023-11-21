@@ -1,3 +1,24 @@
+@font-face {
+  font-family: "Parisienne";
+  src: local("Parisienne"),
+  url(fonts/Parisienne-Regular.ttf) format("opentype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Waterfall";
+  src: local("Waterfall"),
+  url(fonts/Waterfall-Regular.ttf) format("opentype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Forum";
+  src: local("Forum"),
+  url(fonts/Forum-Regular.ttf) format("opentype");
+  font-display: swap;
+}
+
 html, body {
   background: url(images/top.png), hsl(32.31deg 100% 97.45%);
   background-size: contain;
@@ -99,7 +120,7 @@ h2 {
 }
 .nav-item a {
   font-family: 'Forum';
-  color: #828282!important;
+  color: #707070!important;
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
