@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#2EsBetterThanOne</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Forum&family=Parisienne&family=Waterfall&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div id="goToTopBtn" onclick="gotTo('home')">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 19V5M5 12l7-7 7 7" />
+      </svg>
+    </div>
+
+    <div class="container custom-container" id="home">
+      <ul class="nav justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link active" onclick="gotTo('home')">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" onclick="gotTo('story')">Our Story</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" onclick="gotTo('ceremony')">Ceremony</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" onclick="gotTo('photos')">Gallery</a>
+        </li>
+      </ul>
+      <div class="top-section d-flex align-items-center justify-content-center">
+        <div class="mr-auto inner-left">
+          <h1 class="title text-center">He put a ring on it!!</h1>
+          <h2 class="text-center mb-0">Eleo & Eunice</h2>
+          <p class="sub-title mb-0">are finally saying "I do."</p>
+          <p class="text-center hashtag">#2EsBetterThanOne</p>
+          <p class="content">Welcome to our Wedding Website! This website is our digital hub for all things wedding-related, and we can't wait to share the details with you.</p>
+          <p class="content">We'd love for you to take a look around to learn more about our wedding day plans. Don't forget to RSVP and let us know about any dietary preferences, too.</p>
+          <p class="content">And finally, thanks so much for all of your love and support so far! We can't wait to celebrate this special day with all of our favorite people</p>
+        </div>
+        <div class="zoom-container ml-5"></div>
+      </div>
+
+      <div id="story" class="shadow-line"></div>
+
+      <div class="our-story d-flex align-items-center justify-content-center">
+        <div class="our-story-image"></div>
+        <div class="inner-right">
+          <h2 class="mb-5 mt-2">Our Beautiful Love Story</h2>
+          <p>Our love story began at work, where our shared passion for our jobs brought us together. We soon discovered common interests and values beyond the office, and our connection deepened.</p>
+          <p>Our friendship turned into a beautiful love story, and Eleo proposed. Eunice said yes, and now we're engaged, eager to start this new chapter together. Our journey from workmates to engaged couples is a testament to the deep bond we've formed.</p>
+          <p>Thank you for being a part of our love story. We look forward to sharing our future adventures and our special day with you!</p>
+          <button type="button" class="btn btn-outline-primary rsvp-btn">RSVP</button>
+        </div>
+      </div>
+
+      <div  id="ceremony" class="shadow-line"></div>
+
+      <div class="our-ceremony">
+        <h2 class="mb-5 mt-2 text-center">Ceremony & Celebration</h2>
+        <div class="row gallery">
+          <div class="col-md-4 text-center">
+            <img src="images/ring.png" height="80px" class="mb-3"/>
+            <p class="text-center fw-bold">Our Wedding Day</p>
+            <p class="text-center">February 23, 2024</p>
+            <p class="text-center">5 days before our 6th anniversary</p>
+          </div>
+          <div class="col-md-4 text-center px-3">
+            <img src="images/church.png" height="80px" class="mb-3"/>
+            <p class="text-center fw-bold">Ceremony</p>
+            <p class="text-center">2:00 PM</p>
+            <p class="text-center">Sagrado Corazon de Jesus Nazareno Parish, Bermudez Compound, Apokon, Tagum City, Philippines</p>
+          </div>
+          <div class="col-md-4 text-center">
+            <img src="images/glass.png" height="80px" class="mb-3"/>
+            <p class="text-center fw-bold">Reception</p>
+            <p class="text-center">3:00 PM</p>
+            <p class="text-center">SAM Centre, Bermudez Compound, Apokon, Tagum City, Philippines            </p>
+          </div>
+        </div>
+      </div>
+
+      <div id="photos" class="shadow-line"></div>
+
+      <div class="teaser-photos">
+        <h2 class="text-center">Teaser Photos and Video</h2>
+        <div class="box">
+          <div class="row g-1">
+            <div class="col-md-6">
+              <div class="d-flex">
+                <a href="images/IMG_0204.jpg" data-lightbox="image-set-1" class="custom-image">
+                  <img src="images/IMG_0204.jpg" class="custom-image img-fluid img-thumbnail" alt="...">
+                </a>
+                <a href="images/DSC07789.jpg" data-lightbox="image-set-1" class="custom-image">
+                  <img src="images/DSC07789.jpg" class="custom-image img-fluid img-thumbnail" alt="...">
+                </a>
+              </div>
+              <div class="img-thumbnail">
+              <iframe
+                width="100%"
+                height="345"
+                src="https://www.youtube.com/embed/KEFNlx4ZIOU?si=KF9erYyVFJdXKlhS"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <a href="images/DSC07829.jpg" data-lightbox="image-set-1" class="custom-image">
+                <img src="images/DSC07829.jpg" class="custom-image img-fluid img-thumbnail" alt="...">
+              </a>
+              <a href="images/IMG_0202.jpg" data-lightbox="image-set-1" class="custom-image">
+                <img src="images/IMG_0202.jpg" class="custom-image img-fluid img-thumbnail" alt="...">
+              </a>
+              <a href="images/IMG_0205.jpg" data-lightbox="image-set-1" class="custom-image">
+                <img src="images/IMG_0205.jpg" class="custom-image img-fluid img-thumbnail" alt="...">
+              </a>
+            </div>
+            <div class="col-md-3">
+              <a href="images/DSC08098.jpg" data-lightbox="image-set-1" class="custom-image">
+                <img src="images/DSC08098.jpg" class="custom-image img-fluid img-thumbnail" alt="...">
+              </a>
+              <a href="images/DSC08543.jpg" data-lightbox="image-set-1" class="custom-image">
+                <img src="images/DSC08543.jpg" class="custom-image img-fluid img-thumbnail" alt="...">
+              </a>
+              <a href="images/IMG_0201.jpg" data-lightbox="image-set-1" class="custom-image">
+                <img src="images/IMG_0201.jpg" class="custom-image img-fluid img-thumbnail" alt="...">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="shadow-line"></div>
+
+      <div class="rsvp-section d-flex align-items-center justify-content-center">
+        <div class="inner-right">
+          <h2 class="mb-4 mt-4">Save the date and see you there!</h2>
+          <p>While we would love to have all our friends and family with us, we have limited resources available. We sincerely appreciate your understanding and request that you kindly <span class="fw-bold">refrain</span> from <span class="fw-bold">bringing additional/uninvited guests</span> to our event. Thank you for understanding! </p>
+          <button type="button" class="btn btn-outline-primary rsvp-btn">RSVP</button>
+        </div>
+        <div class="rsvp-section-image"></div>
+      </div>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      var options = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.5
+      };
+
+      var observer = new IntersectionObserver(function(entries, observer) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, options);
+
+      var target = document.querySelector('.top-section');
+      observer.observe(target);
+
+      var target1 = document.querySelector('.our-story');
+      observer.observe(target1);
+
+      var target2 = document.querySelector('.rsvp-section');
+      observer.observe(target2);
+
+      var target3 = document.querySelector('.our-ceremony');
+      observer.observe(target3);
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+    var goToTopBtn = document.getElementById('goToTopBtn');
+
+    window.onscroll = function () {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          goToTopBtn.style.display = 'block';
+        } else {
+          goToTopBtn.style.display = 'none';
+        }
+      };
+
+      goToTopBtn.addEventListener('click', function () {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      });
+    });
+
+    function gotTo(id) {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+  </script>
+</html>
