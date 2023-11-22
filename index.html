@@ -13,6 +13,7 @@
     <link rel="preload" href="fonts/Waterfall-Regular.ttf" as="font" type="font/ttf" crossorigin>
     <link rel="preload" href="fonts/Forum-Regular.ttf" as="font" type="font/ttf" crossorigin>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
@@ -34,7 +35,7 @@
           <a class="nav-link" onclick="gotTo('ceremony')">Ceremony</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" onclick="gotTo('photos')">Gallery</a>
+          <button type="button" class="btn rvsp-btn-nav shadow-none">RSVP</button>
         </li>
       </ul>
       <div class="top-section d-flex align-items-center justify-content-center">
@@ -59,7 +60,7 @@
           <p>Our love story began at work, where our shared passion for our jobs brought us together. We soon discovered common interests and values beyond the office, and our connection deepened.</p>
           <p>Our friendship turned into a beautiful love story, and Eleo proposed. Eunice said yes, and now we're engaged, eager to start this new chapter together. Our journey from workmates to engaged couples is a testament to the deep bond we've formed.</p>
           <p>Thank you for being a part of our love story. We look forward to sharing our future adventures and our special day with you!</p>
-          <button type="button" class="btn btn-outline-primary rsvp-btn">RSVP</button>
+          <button type="button" class="btn rsvp-btn shadow-none">RSVP</button>
         </div>
       </div>
 
@@ -67,24 +68,32 @@
 
       <div class="our-ceremony">
         <h2 class="mb-5 mt-2 text-center">Ceremony & Celebration</h2>
-        <div class="row gallery">
-          <div class="col-md-4 text-center">
+        <div class="row">
+          <div class="col-md-4 text-center pb-5">
             <img src="images/ring.png" height="80px" class="mb-3"/>
             <p class="text-center fw-bold">Our Wedding Day</p>
             <p class="text-center">February 23, 2024</p>
             <p class="text-center">5 days before our 6th anniversary</p>
           </div>
-          <div class="col-md-4 text-center px-3">
+          <div class="col-md-4 text-center px-3 pb-5">
             <img src="images/church.png" height="80px" class="mb-3"/>
             <p class="text-center fw-bold">Ceremony</p>
             <p class="text-center">2:00 PM</p>
-            <p class="text-center">Sagrado Corazon de Jesus Nazareno Parish, Bermudez Compound, Apokon, Tagum City, Philippines</p>
+            <p class="text-center mb-2">Sagrado Corazon de Jesus Nazareno Parish, Bermudez Compound, Apokon, Tagum City, Philippines</p>
+            <a href="https://maps.app.goo.gl/FzP5ErnL8WmKRhs88" target="_blank" class="map">
+              <img src="images/map.svg" width="30">
+              <span>View Map</span>
+            </a>
           </div>
-          <div class="col-md-4 text-center">
+          <div class="col-md-4 text-center pb-5">
             <img src="images/glass.png" height="80px" class="mb-3"/>
             <p class="text-center fw-bold">Reception</p>
             <p class="text-center">3:00 PM</p>
-            <p class="text-center">SAM Centre, Bermudez Compound, Apokon, Tagum City, Philippines            </p>
+            <p class="text-center">SAM Centre, Bermudez Compound, Apokon, Tagum City, Philippines</p>
+            <a href="https://maps.app.goo.gl/8mfruJUZCegftNyE8" target="_blank" class="map">
+              <img src="images/map.svg" width="30">
+              <span>View Map</span>
+            </a>
           </div>
         </div>
       </div>
@@ -96,38 +105,43 @@
         <div class="box">
           <div class="row g-1">
             <div class="col-md-6">
-              <div class="d-flex">
-                <a href="images/IMG_0204.jpg" data-lightbox="image-set-1" class="custom-image">
-                  <img src="images/IMG_0204.jpg" class="custom-image img-fluid img-thumbnail" alt="...">
-                </a>
-                <a href="images/DSC07789.JPG" data-lightbox="image-set-1" class="custom-image">
-                  <img src="images/DSC07789.JPG" class="custom-image img-fluid img-thumbnail" alt="...">
-                </a>
+              <div class="row g-1">
+                <div class="col-md-6">
+                  <a href="images/IMG_0204.jpg" class="mfp-gallery" class="custom-image">
+                    <img src="images/IMG_0204.jpg" class="custom-image img-fluid img-thumbnail" alt="...">
+                  </a>
+                </div>
+                <div class="col-md-6">
+                  <a href="images/DSC07789.JPG" class="mfp-gallery" class="custom-image">
+                    <img src="images/DSC07789.JPG" class="custom-image img-fluid img-thumbnail" alt="...">
+                  </a>
+                </div>
               </div>
               <div class="img-thumbnail">
-              <iframe
-                width="100%"
-                height="345"
-                src="https://www.youtube.com/embed/KEFNlx4ZIOU?si=KF9erYyVFJdXKlhS"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
+                <iframe
+                  width="100%"
+                  height="345"
+                  src="https://www.youtube.com/embed/KEFNlx4ZIOU?si=KF9erYyVFJdXKlhS"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen>
+                </iframe>
               </div>
             </div>
             <div class="col-md-3">
               <a href="images/DSC07829.JPG" data-lightbox="image-set-1" class="custom-image">
                 <img src="images/DSC07829.JPG" class="custom-image img-fluid img-thumbnail" alt="...">
               </a>
-              <a href="images/IMG_0202.jpg" data-lightbox="image-set-1" class="custom-image">
-                <img src="images/IMG_0202.jpg" class="custom-image img-fluid img-thumbnail" alt="...">
+              <a href="images/IMG_0200.jpg" data-lightbox="image-set-1" class="custom-image">
+                <img src="images/IMG_0200.jpg" class="custom-image img-fluid img-thumbnail" alt="...">
               </a>
               <a href="images/IMG_0205.jpg" data-lightbox="image-set-1" class="custom-image">
                 <img src="images/IMG_0205.jpg" class="custom-image img-fluid img-thumbnail" alt="...">
               </a>
             </div>
             <div class="col-md-3">
-              <a href="images/DSC08098.jJPGg" data-lightbox="image-set-1" class="custom-image">
+              <a href="images/DSC08098.JPG" data-lightbox="image-set-1" class="custom-image">
                 <img src="images/DSC08098.JPG" class="custom-image img-fluid img-thumbnail" alt="...">
               </a>
               <a href="images/DSC08543.JPG" data-lightbox="image-set-1" class="custom-image">
@@ -147,17 +161,17 @@
         <div class="inner-right">
           <h2 class="mb-4 mt-4">Save the date and see you there!</h2>
           <p>While we would love to have all our friends and family with us, we have limited resources available. We sincerely appreciate your understanding and request that you kindly <span class="fw-bold">refrain</span> from <span class="fw-bold">bringing additional/uninvited guests</span> to our event. Thank you for understanding! </p>
-          <button type="button" class="btn btn-outline-primary rsvp-btn">RSVP</button>
+          <button type="button" class="btn rsvp-btn shadow-none">RSVP</button>
         </div>
         <div class="rsvp-section-image"></div>
       </div>
     </div>
   </body>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
   <script>
     $(document).ready(function(){
       var options = {
@@ -186,6 +200,13 @@
 
       var target3 = document.querySelector('.our-ceremony');
       observer.observe(target3);
+
+      $('.mfp-gallery').magnificPopup({
+          type: 'image',
+          gallery: {
+              enabled: true
+          }
+      });
     });
 
     document.addEventListener('DOMContentLoaded', function () {
