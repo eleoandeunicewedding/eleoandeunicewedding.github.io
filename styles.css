@@ -25,7 +25,7 @@ html, body {
   background-repeat: no-repeat;
   overflow-x: hidden;
 }
-p, label {
+p, label, span {
   color: #705953;
   font-family: "Forum";
   font-weight: 500;
@@ -36,9 +36,20 @@ h2 {
   font-size: 50px;
   color: #DBA191;
 }
+h3 {
+  font-family: 'Parisienne', cursive;
+  font-size: 35px;
+  color: #DBA191;
+}
+h4 {
+  font-family: 'Parisienne', cursive;
+  font-size: 25px;
+  color: #DBA191;
+}
 .custom-container {
   padding: 35px 130px;
 }
+
 
 .top-section {
   height: 600px;
@@ -56,6 +67,12 @@ h2 {
 .top-section .hashtag {
   color: #7dc1ee;
 }
+.text-blue {
+  color: #7dc1ee;
+}
+.text-brand {
+  color: #DBA191;
+}
 .circle-image {
   background: url(images/IMG_0206.jpg);
   width: 450px;
@@ -65,7 +82,7 @@ h2 {
   background-position: center;
 }
 
-.our-story {
+.our-story, .faqs {
   opacity: 0;
   transform: translateX(-100px);
   transition: opacity 1s, transform 1s;
@@ -75,7 +92,7 @@ h2 {
   width: 550px;
   margin-left: 100px
 }
-.our-story.visible {
+.our-story.visible, .faqs.visible {
   opacity: 1;
   transform: translateX(0);
 }
@@ -88,7 +105,7 @@ h2 {
   background-position: bottom;
 }
 
-.our-ceremony, .teaser-photos {
+.our-ceremony, .teaser-photos, .faqs, .bridal-party {
   margin: 100px auto 80px;
 }
 
@@ -105,6 +122,15 @@ h2 {
   transition: transform 0.3s ease-in-out;
   display: block;
   margin: 0 auto;
+}
+.custom-image-2 {
+  object-fit: cover;
+  width: 100%;
+  max-height: 500px;
+  transition: transform 0.3s ease-in-out;
+  display: block;
+  margin: 0 auto;
+  object-position: top;
 }
 
 .shadow-line {
@@ -174,8 +200,8 @@ h2 {
 }
 .rsvp-section-image {
   background: url(images/IMG_0203.jpg);
-  width: 350px;
-  height: 450px;
+  width: 300px;
+  height: 400px;
   border-radius: 200px 200px  10px 10px;
   background-size: cover;
   background-position: top;
@@ -244,6 +270,56 @@ h2 {
 }
 .map img {
   margin-bottom: 2px;
+}
+
+.bridal-party-top, .bride-squad, .groom-squad, .capture-moments {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 0.8s, transform 0.8s;
+}
+.bridal-party-top.visible, .bride-squad.visible, .groom-squad.visible, .capture-moments.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.bride-squad, .groom-squad {
+  margin: 0 120px;
+}
+
+.capture-moments {
+  margin: 100px auto;
+}
+.space-normal {
+  letter-spacing: 1px;
+}
+.line-with-image {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  margin: 35px auto 0;
+}
+.line-with-image::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  z-index: 0;
+}
+.line-with-image img {
+  position: relative;
+  z-index: 2;
+  max-width: 100%;
+  height: auto;
+  background: #fff9f2;
+  padding: 0 15px;
+}
+.rvsp-mobile {
+  display: none;
 }
 
 @keyframes zoomOut {
@@ -349,6 +425,24 @@ h2 {
     width: 300px;
     height: 400px;
   }
+
+  .rvsp {
+    display: none;
+  }
+  .rvsp-mobile {
+    display: block;
+  }
+
+  .bride-squad, .groom-squad {
+    margin: 0 20px;
+  }
+  .bridesmaid span, .groomsmen span {
+    display: none;
+  }
+  .bridesmaid, .bridesmaid div, .groomsmen, .groomsmen div {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -434,5 +528,9 @@ h2 {
     width: 400px;
     height: 350px;
     margin-top: 25px;
+  }
+
+  .bride-squad, .groom-squad {
+    margin: 0 50px;
   }
 }
